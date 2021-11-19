@@ -43,5 +43,5 @@ process_data_files.pl has a large list of required command line options so I hav
 
 `perl process_data_files.pl -utempelasticuser -ptempelasticuser -h192.168.2.229:9200 -ebls-final-data-en-ohio -f output/data/en.data.Ohio.mycopy -b 2500 -i`
 
-Watch the video here to see this in action []() and this video []() that explains how to use the BLS Ohio dashboard at [https://dangerousmetrics.org](https://dangerousmetrics.org)
+Watch the video here to see this in action [https://youtu.be/A6M0JW-R3lA](https://youtu.be/A6M0JW-R3lA) and this video [https://youtu.be/pU2wqrstUb8](https://youtu.be/pU2wqrstUb8) that explains how to use the BLS Ohio dashboard at [https://dangerousmetrics.org](https://dangerousmetrics.org)
 
