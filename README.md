@@ -25,6 +25,8 @@ Once you have downloaded the BLS EN dataset from [https://download.bls.gov/pub/t
     ├── split_data_by_state.pl
     └── split_series_by_state.pl
 ```
+Before running any of the scripts you should create an elasticsearch template using the .json file in this repository. This will make sure dates and values are ingested with the correct data type.
+
 You will need host and username information for an Elasticsearch cluster that has write access to the index where you wish to ingest the data.
 
 The scripts in the src folder should be ran in the order below:
