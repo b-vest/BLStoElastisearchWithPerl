@@ -30,10 +30,12 @@ Before running any of the scripts you should create an elasticsearch template us
 You will need host and username information for an Elasticsearch cluster that has write access to the index where you wish to ingest the data.
 
 The scripts in the src folder should be ran in the order below:
+```
 split_series_by_state.pl
 split_data_by_state.pl
 process_series_files.pl
 process_data_files.pl
+```
 
 The first two of these scripts do not require any command line options because they assume that the series and data files are one level up in the directory structure at en.series and en.data.1.AllData. The first two scripts can run at the same time as they are reading and writing to different files. The output of these two scripts will be at output/series and output/data. The files output by these scripts will have the extension .mycopy so as to not confuse them with the originals.
 
