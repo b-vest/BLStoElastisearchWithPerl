@@ -1,0 +1,35 @@
+{
+  "template": {
+    "settings": {
+      "index": {
+        "number_of_shards": "2"
+      }
+    },
+    "mappings": {
+      "properties": {
+        "begin_year": {
+          "type": "date",
+          "format": "strict_date_optional_time||epoch_millis||yyyy"
+        },
+        "computed_date": {
+          "type": "date",
+          "format": "strict_date_optional_time||epoch_millis||yyyy/MM/dd"
+        },
+        "end_year": {
+          "type": "date",
+          "format": "strict_date_optional_time||epoch_millis||yyyy"
+        },
+        "value": {
+          "type": "float",
+          "ignore_malformed": false,
+          "coerce": true
+        },
+        "year": {
+          "type": "date",
+          "format": "strict_date_optional_time||epoch_millis||yyyy"
+        }
+      }
+    },
+    "aliases": {}
+  }
+}
