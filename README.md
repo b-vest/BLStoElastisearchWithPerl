@@ -2,6 +2,7 @@
 Perl scripts to process Bureau of Labor Statistics data and ingest into Elasticsearch
 
 Once you have downloaded the BLS EN dataset from [https://download.bls.gov/pub/time.series/en/](https://download.bls.gov/pub/time.series/en/) and download these scripts you should have a directory structure like the one below.
+```
 .
 ├── en.area
 ├── en.data.1.AllData
@@ -23,8 +24,7 @@ Once you have downloaded the BLS EN dataset from [https://download.bls.gov/pub/t
     ├── README.md
     ├── split_data_by_state.pl
     └── split_series_by_state.pl
-
-
+```
 You will need host and username information for an #lasticsearch cluster that has write access to the index where you wish to ingest the data.
 
 The scripts in the src folder should be ran in the order below:
