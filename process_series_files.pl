@@ -116,12 +116,8 @@ while(<FH>){
             		$sendHash{$dataHeader[$i]} = $dataArray[$i];
             	}
             }
-   			#now it is all tied together, we will store the data in Redis with the session_id as the key
-            #print Dumper(\%sendHash);
-            #delete $sendHash{begin_year};
-            #delete $sendHash{begin_period};
-            #delete $sendHash{end_year};
-            #delete $sendHash{end_period};
+   	#now it is all tied together, we will store the data in Redis with the session_id as the key
+
             $redis->set($dataArray[0] => encode_json(\%sendHash));
 	}
 	++$seriesCounter;
